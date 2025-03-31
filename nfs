@@ -1,0 +1,4 @@
+/data 192.168.1.1/255.255.255.0(rw,insecure,nohide,all_squash,anonuid=36,anongid=36,no_subtree_check)
+
+sudo firewall-cmd --add-service={nfs,nfs3,rpc-bind} --permanent
+sudo firewall-cmd --reload
